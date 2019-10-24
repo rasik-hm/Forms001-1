@@ -9,12 +9,13 @@
 import Foundation
 
 class FormModel: NSObject {
-    
+    /// Check Whether given string is valid mail
     func isValidEmail(emailStr: String) -> Bool {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", RegexConstants.email)
         return emailTest.evaluate(with: emailStr)
     }
     
+    /// Validates the first, last & email and if success provides "" or else provides errorMessage
     func validate(firstName: String, lastName: String, email: String) ->  String {
         if firstName.isEmpty {
             return AlertConstants.enterFirstName

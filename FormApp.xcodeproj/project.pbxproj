@@ -20,6 +20,7 @@
 		F923CA0B2361B3AC005FE03A /* FormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F923CA0A2361B3AC005FE03A /* FormTests.swift */; };
 		F923CA0D2361B8DD005FE03A /* RegexConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F923CA0C2361B8DD005FE03A /* RegexConstants.swift */; };
 		F923CA112361C207005FE03A /* AlertConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F923CA102361C207005FE03A /* AlertConstants.swift */; };
+		F923CA142361CA15005FE03A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F923CA132361CA15005FE03A /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F923CA0A2361B3AC005FE03A /* FormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTests.swift; sourceTree = "<group>"; };
 		F923CA0C2361B8DD005FE03A /* RegexConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexConstants.swift; sourceTree = "<group>"; };
 		F923CA102361C207005FE03A /* AlertConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertConstants.swift; sourceTree = "<group>"; };
+		F923CA132361CA15005FE03A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		F923C9CE2361ABDD005FE03A /* FormApp */ = {
 			isa = PBXGroup;
 			children = (
+				F923CA122361CA08005FE03A /* Extensions */,
 				F923CA092361B2A2005FE03A /* Forms */,
 				F923CA052361B263005FE03A /* Base */,
 				F923C9D32361ABDD005FE03A /* Main.storyboard */,
@@ -181,6 +184,14 @@
 				F923C9FD2361AF50005FE03A /* FormModel.swift */,
 			);
 			path = Forms;
+			sourceTree = "<group>";
+		};
+		F923CA122361CA08005FE03A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F923CA132361CA15005FE03A /* Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +332,7 @@
 				F923CA0D2361B8DD005FE03A /* RegexConstants.swift in Sources */,
 				F923CA112361C207005FE03A /* AlertConstants.swift in Sources */,
 				F923C9D02361ABDD005FE03A /* AppDelegate.swift in Sources */,
+				F923CA142361CA15005FE03A /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,8 +508,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CLC2PV4VB3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FormApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -505,6 +517,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmspl.FormApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -514,8 +527,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CLC2PV4VB3;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FormApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmspl.FormApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
